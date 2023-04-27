@@ -6,5 +6,10 @@ namespace AppBancoDigital.Model
 {
     internal class Conta
     {
+        public int ID { get; set; }
+        public string limite { get; set; }
+        public string tipo { get; set; }
+        public double saldo { get; set; }
+
     }
 }

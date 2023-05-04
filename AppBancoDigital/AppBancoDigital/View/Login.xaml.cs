@@ -15,6 +15,7 @@ namespace AppBancoDigital.View
         public Login()
         {
             InitializeComponent();
+            logo.Source = ImageSource.FromFile("AppBancoDigital.Imagens.Logo.png");
         }
 
         private void Button_Clicked(object sender, EventArgs e)

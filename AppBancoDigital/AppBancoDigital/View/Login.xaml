@@ -32,8 +32,10 @@
                 </StackLayout>
             </Frame>
             <Button x:Name="btn_login" TextColor="Black"
-                    Text="Entrar" CornerRadius="30"
-                    BackgroundColor="MediumPurple" Margin="70" />
+                    TextTransform="None" HorizontalOptions="Center"
+                    Text="Entrar" CornerRadius="20"
+                    BorderWidth="1" BorderColor="Black"
+                    BackgroundColor="MediumPurple" Clicked="Button_Clicked"/>
         </StackLayout>
 
     </ContentPage.Content>

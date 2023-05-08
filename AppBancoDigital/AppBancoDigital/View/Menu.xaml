@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Menu">
+             x:Class="AppBancoDigital.View.Menu"
+             Title="Menu">
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="DimGray"
+                          Offset="0.1"/>
+            <GradientStop Color="DarkCyan"
+                          Offset="2"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Center">
+
+            <Image x:Name="logo" Scale="2"/>
+            <Label Text=""/>
+            <Label Text=""/> 
+
+            <Button x:Name="btn_pag_login" TextColor="Black"
+                    TextTransform="None" HorizontalOptions="Center"
+                    Text="LOGIN" CornerRadius="20"
+                    BorderWidth="1" BorderColor="Black"
+                    BackgroundColor="#00CDCD" Clicked="btn_pag_login_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

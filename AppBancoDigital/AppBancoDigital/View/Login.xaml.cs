@@ -15,13 +15,44 @@ namespace AppBancoDigital.View
         public Login()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.Lobank1.png");
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void btn_voltar_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+                App.Current.MainPage = new NavigationPage(new View.Menu());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+            }
+        }
 
+        private async void btn_login_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                App.Current.MainPage = new NavigationPage(new View.Conta());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+            }
+        }
+
+        private async void btn_CriarConta_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                App.Current.MainPage = new NavigationPage(new View.Cadastro());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+            }
         }
     }
 }

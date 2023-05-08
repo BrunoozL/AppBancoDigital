@@ -5,7 +5,7 @@
              Title="Login">
     <ContentPage.Background>
         <LinearGradientBrush>
-            <GradientStop Color="MediumPurple"
+            <GradientStop Color="DimGray"
                           Offset="0.1"/>
             <GradientStop Color="DarkCyan"
                           Offset="1.1"/>
@@ -13,8 +13,14 @@
     </ContentPage.Background>
 
     <ContentPage.Content>
+
         <StackLayout VerticalOptions="Center">
-            <Image x:Name="logo" HeightRequest="85"/>
+
+            <Image x:Name="logo" Scale="2"/>
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text=""/>
+
             <Frame CornerRadius="10"
                    x:Name="form_login"
                    VerticalOptions="CenterAndExpand"
@@ -31,11 +37,13 @@
                            ReturnType="Done"/>
                 </StackLayout>
             </Frame>
+            
             <Button x:Name="btn_login" TextColor="Black"
                     TextTransform="None" HorizontalOptions="Center"
                     Text="Entrar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="MediumPurple" Clicked="Button_Clicked"/>
+                    BackgroundColor="#00CDCD" Clicked="Button_Clicked"/>
+            
         </StackLayout>
 
     </ContentPage.Content>

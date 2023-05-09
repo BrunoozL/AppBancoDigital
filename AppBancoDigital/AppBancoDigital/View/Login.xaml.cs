@@ -64,7 +64,7 @@ namespace AppBancoDigital.View
             }
             else
             {
-                DisplayAlert("Erro de Login", "CPF ou senha inválidos.", "OK");
+                DisplayAlert("Erro de Login", "CPF ou senha inseridos não existem.", "OK");
             }
 
            /* try

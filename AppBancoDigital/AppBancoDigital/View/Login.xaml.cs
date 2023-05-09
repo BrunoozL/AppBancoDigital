@@ -19,6 +19,20 @@ namespace AppBancoDigital.View
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.Lobank1.png");
         }
 
+        private bool CheckCredentials(string cpf, string senha)
+        {
+            //Login Para Admin
+            if (cpf == "999.999.999-99" && senha == "zzxxccvv123")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+
+            }
+        }
+
         private async void btn_voltar_Clicked(object sender, EventArgs e)
         {
             try
@@ -31,16 +45,37 @@ namespace AppBancoDigital.View
             }
         }
 
-        private async void btn_login_Clicked(object sender, EventArgs e)
+        private void btn_login_Clicked(object sender, EventArgs e)
         {
-            try
+            string cpf = txt_cpf.Text;
+            string senha = txt_senha.Text;
+
+            if (string.IsNullOrEmpty(cpf) || string.IsNullOrEmpty(senha))
+            {
+                DisplayAlert("Erro de Login", "CPF e senha são obrigatórios.", "OK");
+                return;
+            }
+
+            bool isValidUser = CheckCredentials(cpf, senha);
+
+            if (isValidUser)
+            {
+                App.Current.MainPage = new NavigationPage(new View.Conta());
+            }
+            else
+            {
+                DisplayAlert("Erro de Login", "CPF ou senha inválidos.", "OK");
+            }
+
+           /* try
             {
                 App.Current.MainPage = new NavigationPage(new View.Conta());
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+                DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
             }
+           */
         }
 
         private async void btn_CriarConta_Clicked(object sender, EventArgs e)

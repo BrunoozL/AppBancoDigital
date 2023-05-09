@@ -1,12 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Cadastro">
+             x:Class="AppBancoDigital.View.Cadastro"
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital">
+
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="DarkBlue"
+                          Offset="0.001"/>
+            <GradientStop Color="#00FFFF"
+                          Offset="2"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout VerticalOptions="Center">
+
+            <Image x:Name="logo" Scale="2"/>
+            <Label Text="CADASTRO" FontSize="Title" HorizontalOptions="Center" TextColor="#00FFFF"/>
+            <Label Text=""/>
+            <Label Text=""/>
+
+            <Frame CornerRadius="10"
+                   x:Name="form_cadastro"
+                   VerticalOptions="CenterAndExpand"
+                   BackgroundColor="Transparent"
+                   BorderColor="White"
+                   Margin="20">
+                <StackLayout>
+                    <Label Text="Nome:" TextColor="White"/>
+                    <Entry x:Name="txt_nome"
+                           Keyboard="Default"
+                           TextColor="White"/>
+                    <Label Text="CPF:" TextColor="White"/>
+                    <control:MaskedEntry x:Name="txt_cpf" TextColor="White" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
+                    <Label Text="Senha:" TextColor="White"/>
+                    <Entry x:Name="txt_senha"
+                           Keyboard="Default"
+                           IsPassword="True"
+                           ReturnType="Done"
+                           TextColor="White"/>
+                </StackLayout>
+            </Frame>
+
+            <Button x:Name="btn_cadastro" TextColor="Black"
+                    TextTransform="None" HorizontalOptions="Center"
+                    Text="Cadastrar" CornerRadius="20"
+                    BorderWidth="1" BorderColor="Black"
+                    BackgroundColor="#00FFFF" Clicked="btn_cadastro_Clicked"/>
+
+            <Label Text=""/>
+            <Button x:Name="btn_voltar" TextColor="Black"
+                    TextTransform="None" HorizontalOptions="StartAndExpand"
+                    Text="Voltar" CornerRadius="20"
+                    BorderWidth="1" BorderColor="Black" Margin="20"
+                    BackgroundColor="#00FFFF" Clicked="btn_voltar_Clicked"/>
         </StackLayout>
+
+
     </ContentPage.Content>
 </ContentPage>

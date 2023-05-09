@@ -5,9 +5,9 @@
              Title="Menu">
     <ContentPage.Background>
         <LinearGradientBrush>
-            <GradientStop Color="DimGray"
-                          Offset="0.1"/>
-            <GradientStop Color="DarkCyan"
+            <GradientStop Color="DarkBlue"
+                          Offset="0.001"/>
+            <GradientStop Color="#00FFFF"
                           Offset="2"/>
         </LinearGradientBrush>
     </ContentPage.Background>
@@ -20,9 +20,9 @@
 
             <Button x:Name="btn_pag_login" TextColor="Black"
                     TextTransform="None" HorizontalOptions="Center"
-                    Text="LOGIN" CornerRadius="20"
+                    Text="Iníciar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00CDCD" Clicked="btn_pag_login_Clicked"/>
+                    BackgroundColor="#00FFFF" Clicked="btn_pag_login_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

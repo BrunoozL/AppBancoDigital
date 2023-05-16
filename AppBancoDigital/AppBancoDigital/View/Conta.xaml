@@ -2,11 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Conta">
-    <ContentPage.Content>
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="DarkBlue"
+                          Offset="0.001"/>
+            <GradientStop Color="#FF00FF"
+                          Offset="2"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Scale="2"/>
+
+            <Label Text="CONTA" FontSize="Title"
+                   TextColor="#00FFFF"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+            <Label Text=""/>
+            <Label Text=""/>
+
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>

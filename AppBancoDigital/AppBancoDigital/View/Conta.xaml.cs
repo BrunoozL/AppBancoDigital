@@ -15,6 +15,8 @@ namespace AppBancoDigital.View
         public Conta()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.Lobank2.png");
         }
     }
 }

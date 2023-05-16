@@ -22,7 +22,7 @@ namespace AppBancoDigital.View
         private bool CheckCredentials(string cpf, string senha)
         {
             //Login Para Admin
-            if (cpf == "999.999.999-99" && senha == "zzxxccvv123")
+            if (cpf == "999.999.999-99" && senha == "123")
             {
                 return true;
             }
@@ -45,14 +45,17 @@ namespace AppBancoDigital.View
             }
         }
 
-        private void btn_login_Clicked(object sender, EventArgs e)
+        private async void btn_login_Clicked(object sender, EventArgs e)
         {
+             await btn_login.ScaleTo(1.2, 100, Easing.CubicOut);
+             await btn_login.ScaleTo(1, 100, Easing.CubicIn);
+         
             string cpf = txt_cpf.Text;
             string senha = txt_senha.Text;
 
             if (string.IsNullOrEmpty(cpf) || string.IsNullOrEmpty(senha))
             {
-                DisplayAlert("Erro de Login", "CPF e senha são obrigatórios.", "OK");
+                await DisplayAlert("Erro de Login", "CPF e senha são obrigatórios.", "OK");
                 return;
             }
 
@@ -64,18 +67,18 @@ namespace AppBancoDigital.View
             }
             else
             {
-                DisplayAlert("Erro de Login", "CPF ou senha inseridos não existem.", "OK");
+                await DisplayAlert("Erro de Login", "CPF ou senha inseridos não existem.", "OK");
             }
 
-           /* try
-            {
-                App.Current.MainPage = new NavigationPage(new View.Conta());
-            }
-            catch (Exception ex)
-            {
-                DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
-            }
-           */
+            /* try
+             {
+                 App.Current.MainPage = new NavigationPage(new View.Conta());
+             }
+             catch (Exception ex)
+             {
+                 DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+             }
+            */
         }
 
         private async void btn_CriarConta_Clicked(object sender, EventArgs e)

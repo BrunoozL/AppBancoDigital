@@ -12,10 +12,14 @@
 
   <ItemGroup>
     <None Remove="Imagens\Lobank1.png" />
+    <None Remove="Imagens\Lobank2.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Imagens\Lobank1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\Lobank2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

@@ -41,6 +41,7 @@ namespace AppBancoDigital.View
             {
                 await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
             }
+
         }
 
         private void dtcpk_nascimento_DateSelected(object sender, DateChangedEventArgs e)

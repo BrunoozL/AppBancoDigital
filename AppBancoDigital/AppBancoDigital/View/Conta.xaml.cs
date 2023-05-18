@@ -18,5 +18,10 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.Lobank2.png");
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -11,28 +11,21 @@
         </LinearGradientBrush>
     </ContentPage.Background>
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition Width="200"/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="200"/>
-        </Grid.RowDefinitions>
-
-        <StackLayout>
+        <Grid RowDefinitions="100, 100, 100, 100, 100"
+              ColumnDefinitions="100, *">
 
             <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Scale="2"/>
 
-            <Label Text="CONTA" FontSize="Title"
+            <!--="{Binding txt_nome}"-->
+            <Label Text="Bruno Righi" FontSize="Title"
                    TextColor="#00FFFF"
                    Grid.Row="0"
-                   Grid.Column="1"/>
-            <Label Text=""/>
-            <Label Text=""/>
+                   Grid.Column="1"
+                   Margin="30"
+                   HorizontalOptions="End"/>
+            
+            
+            
 
-        </StackLayout>
     </Grid>
 </ContentPage>

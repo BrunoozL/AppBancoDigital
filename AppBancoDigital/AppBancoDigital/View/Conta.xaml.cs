@@ -33,7 +33,7 @@ namespace AppBancoDigital.View
                 else
                 {
                     txt_saldo = false;
-                    btnolho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho_aberto.png");
+                   btnolho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho_aberto.png");
                 }
 
             }

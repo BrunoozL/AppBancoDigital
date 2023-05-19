@@ -2,22 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Cadastro"
-             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital">
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
+             Background="#00FF7F">
 
-    <ContentPage.Background>
-        <LinearGradientBrush>
-            <GradientStop Color="DarkBlue"
-                          Offset="0.001"/>
-            <GradientStop Color="#FF00FF"
-                          Offset="2"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
     <ContentPage.Content>
 
         <StackLayout VerticalOptions="Center">
 
-            <Image x:Name="logo" Scale="2"/>
-            <Label Text="CADASTRO" FontSize="Title" HorizontalOptions="Center" TextColor="#00FFFF"/>
+            <Image x:Name="logo" Scale="1.5"/>
+            <Label Text="CADASTRO" FontSize="Title" HorizontalOptions="Center" TextColor="Black"/>
             <Label Text=""/>
 
 
@@ -25,26 +18,26 @@
                    x:Name="form_cadastro"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="Transparent"
-                   BorderColor="White"
+                   BorderColor="Black"
                    Margin="20">
                 <StackLayout>
-                    <Label Text="Nome:" TextColor="White"/>
+                    <Label Text="Nome:" TextColor="Black"/>
                     <Entry x:Name="txt_nome"
                            Keyboard="Default"
-                           TextColor="White"/>
-                    <Label Text="CPF:" TextColor="White"/>
-                    <control:MaskedEntry x:Name="txt_cpf" TextColor="White" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
-                    <Label Text="Senha:" TextColor="White"/>
+                           TextColor="Black"/>
+                    <Label Text="CPF:" TextColor="Black"/>
+                    <control:MaskedEntry x:Name="txt_cpf" TextColor="Black" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
+                    <Label Text="Senha:" TextColor="Black"/>
                     <Entry x:Name="txt_senha"
                            Keyboard="Default"
                            IsPassword="True"
                            ReturnType="Done"
-                           TextColor="White"/>
-                    <Label Text="Data de Nascimento:" TextColor="White"/>
+                           TextColor="Black"/>
+                    <Label Text="Data de Nascimento:" TextColor="Black"/>
                     <DatePicker x:Name="dtcpk_nascimento"
                                 Format="dd/MM/yyyy"
                                 DateSelected="dtcpk_nascimento_DateSelected"
-                                TextColor="White"/>
+                                TextColor="Black"/>
                 </StackLayout>
             </Frame>
 
@@ -52,15 +45,15 @@
                     TextTransform="None" HorizontalOptions="Center"
                     Text="Cadastrar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00FFFF" Clicked="btn_cadastro_Clicked"/>
+                    BackgroundColor="#08D46D" Clicked="btn_cadastro_Clicked"/>
 
             <Button x:Name="btn_voltar" TextColor="Black"
                     TextTransform="None" HorizontalOptions="StartAndExpand"
                     Text="Voltar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black" Margin="20"
-                    BackgroundColor="#00FFFF" Clicked="btn_voltar_Clicked"/>
+                    BackgroundColor="#08D46D" Clicked="btn_voltar_Clicked"/>
         </StackLayout>
-
-
+        
     </ContentPage.Content>
+
 </ContentPage>

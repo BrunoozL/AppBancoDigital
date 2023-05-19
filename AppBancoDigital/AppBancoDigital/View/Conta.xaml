@@ -1,24 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Conta">
-    <ContentPage.Background>
-        <LinearGradientBrush>
-            <GradientStop Color="DarkBlue"
-                          Offset="0.001"/>
-            <GradientStop Color="#FF00FF"
-                          Offset="2"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
+             x:Class="AppBancoDigital.View.Conta"
+             Background="#00FF7F">
 
-        <Grid RowDefinitions="100, 100, 100, 100, 100"
+    <Grid RowDefinitions="100, 100, 100, 100, 100"
               ColumnDefinitions="100, *">
 
-            <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Scale="2"/>
+            <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Scale="1.5"/>
 
             <!--="{Binding txt_nome}"-->
             <Label Text="Bruno Righi" FontSize="Title"
-                   TextColor="#00FFFF"
+                   TextColor="Black"
                    Grid.Row="0"
                    Grid.Column="1"
                    Margin="30"

@@ -2,27 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Menu"
-             Title="Menu">
-    <ContentPage.Background>
-        <LinearGradientBrush>
-            <GradientStop Color="DarkBlue"
-                          Offset="0.001"/>
-            <GradientStop Color="#FF00FF"
-                          Offset="2"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
+             Title="Menu"
+             Background="#00FF7F">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
 
-            <Image x:Name="logo" Scale="2"/>
+            <Image x:Name="logo" Scale="1.5"/>
             <Label Text=""/>
             <Label Text=""/> 
 
             <Button x:Name="btn_pag_login" TextColor="Black"
                     TextTransform="None" HorizontalOptions="Center"
-                    Text="Iníciar" CornerRadius="20"
+                    Text="Iniciar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00FFFF" Clicked="btn_pag_login_Clicked"/>
+                    BackgroundColor="#08D46D" Clicked="btn_pag_login_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

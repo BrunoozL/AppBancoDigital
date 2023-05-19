@@ -13,6 +13,8 @@
   <ItemGroup>
     <None Remove="Imagens\Lobank1.png" />
     <None Remove="Imagens\Lobank2.png" />
+    <None Remove="Imagens\olho_aberto.png" />
+    <None Remove="Imagens\olho_fechado.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +22,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\Lobank2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\olho_aberto.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\olho_fechado.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

@@ -47,8 +47,6 @@ namespace AppBancoDigital.View
 
         private async void btn_login_Clicked(object sender, EventArgs e)
         {
-             await btn_login.ScaleTo(1.2, 100, Easing.CubicOut);
-             await btn_login.ScaleTo(1, 100, Easing.CubicIn);
          
             string cpf = txt_cpf.Text;
             string senha = txt_senha.Text;

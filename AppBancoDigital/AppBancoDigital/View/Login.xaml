@@ -3,22 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
              x:Class="AppBancoDigital.View.Login"
-             Title="Login">
-    <ContentPage.Background>
-        <LinearGradientBrush>
-            <GradientStop Color="DarkBlue"
-                          Offset="0.001"/>
-            <GradientStop Color="#FF00FF"
-                          Offset="2"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
+             Title="Login"
+             Background="#00FF7F">
 
     <ContentPage.Content>
 
         <StackLayout VerticalOptions="Center">
 
-            <Image x:Name="logo" Scale="2"/>
-            <Label Text="LOGIN" FontSize="Title" HorizontalOptions="Center" TextColor="#00FFFF"/>
+            <Image x:Name="logo" Scale="1.5"/>
+            <Label Text="LOGIN" FontSize="Title" HorizontalOptions="Center" TextColor="Black"/>
             <Label Text=""/>
             <Label Text=""/>
 
@@ -26,14 +19,14 @@
                    x:Name="form_login"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="Transparent"
-                   BorderColor="White"
+                   BorderColor="Black"
                    Margin="20">
                 <StackLayout>
-                    <Label Text="CPF" TextColor="White"/>
-                    <control:MaskedEntry x:Name="txt_cpf" Keyboard="Numeric" TextColor="White" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
-                    <Label Text="Senha" TextColor="White"/>
+                    <Label Text="CPF" TextColor="Black"/>
+                    <control:MaskedEntry x:Name="txt_cpf" Keyboard="Numeric" TextColor="Black" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
+                    <Label Text="Senha" TextColor="Black"/>
                     <Entry x:Name="txt_senha"
-                           TextColor="White"
+                           TextColor="Black"
                            Keyboard="Default"
                            IsPassword="True"
                            ReturnType="Done"/>
@@ -44,12 +37,12 @@
                     TextTransform="None" HorizontalOptions="Center"
                     Text="Entrar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00FFFF" Clicked="btn_login_Clicked"/>
+                    BackgroundColor="#08D46D" Clicked="btn_login_Clicked"/>
 
 
             <Button x:Name="btn_CriarConta" Text="Não tem uma conta? Criar uma conta."
                     FontAttributes="Italic" TextTransform="None"
-                    BackgroundColor="Transparent" TextColor="#fff"
+                    BackgroundColor="Transparent" TextColor="Black"
                     CornerRadius="20" HorizontalOptions="Center"
                     Clicked="btn_CriarConta_Clicked"/>
             <Label Text=""/>
@@ -58,7 +51,7 @@
                     TextTransform="None" HorizontalOptions="StartAndExpand"
                     Text="Voltar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black" Margin="20"
-                    BackgroundColor="#00FFFF" Clicked="btn_voltar_Clicked"/>
+                    BackgroundColor="#08D46D" Clicked="btn_voltar_Clicked"/>
             
 
         </StackLayout>

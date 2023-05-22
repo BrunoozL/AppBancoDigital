@@ -6,11 +6,13 @@ namespace AppBancoDigital
 {
     public partial class App : Application
     {
+
+        public static Model.Correntista DadosCorrentista { get; set; }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new View.Conta();
+            MainPage = new View.Menu();
         }
 
         protected override void OnStart()

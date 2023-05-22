@@ -4,9 +4,9 @@ using System.Text;
 
 namespace AppBancoDigital.Model
 {
-    internal class ChavePix
+    public class ChavePix
     {
-        public int ID { get; set; }
+        public int? ID { get; set; }
         public string tipo { get; set; }
         public string chave { get; set; }
     }

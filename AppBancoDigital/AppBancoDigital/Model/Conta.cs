@@ -4,9 +4,9 @@ using System.Text;
 
 namespace AppBancoDigital.Model
 {
-    internal class Conta
+    public class Conta
     {
-        public int ID { get; set; }
+        public int? ID { get; set; }
         public string limite { get; set; }
         public string tipo { get; set; }
         public double saldo { get; set; }

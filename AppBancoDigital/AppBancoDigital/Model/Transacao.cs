@@ -4,10 +4,10 @@ using System.Text;
 
 namespace AppBancoDigital.Model
 {
-    internal class Transacao
+    public class Transacao
     {
-        public int ID { get; set; }
-        public string data_hora { get; set; }
+        public int? ID { get; set; }
+        public DateTime data_hora { get; set; }
         public double valor { get;set; }
     }
 }

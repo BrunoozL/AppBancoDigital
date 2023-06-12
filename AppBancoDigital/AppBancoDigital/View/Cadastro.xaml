@@ -36,7 +36,6 @@
                     <Label Text="Data de Nascimento:" TextColor="Black"/>
                     <DatePicker x:Name="dtcpk_nascimento"
                                 Format="dd/MM/yyyy"
-                                DateSelected="dtcpk_nascimento_DateSelected"
                                 TextColor="Black"/>
                 </StackLayout>
             </Frame>

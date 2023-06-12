@@ -6,8 +6,10 @@ namespace AppBancoDigital.Model
 {
     public class Transacao
     {
-        public int? ID { get; set; }
-        public DateTime data_hora { get; set; }
-        public double valor { get;set; }
+        public int ID { get; set; }
+        public Conta ContaOrigem { get; set; }
+        public Conta ContaDestino { get; set; }
+        public double Valor { get; set; }
+        public DateTime Data_Transacao { get; set; }
     }
 }

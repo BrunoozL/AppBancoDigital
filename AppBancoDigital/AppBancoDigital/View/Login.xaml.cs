@@ -49,10 +49,10 @@ namespace AppBancoDigital.View
                         senha = txt_senha.Text,
                     });
 
-                    if (c.ID != null)
+                    if (c.id != null)
                     {
                         App.DadosCorrentista = c;
-                        App.Current.MainPage = new NavigationPage(new View.Menu());
+                        App.Current.MainPage = new NavigationPage(new View.Conta());
                     }
                     else
                         throw new Exception("Dados de login inválidos.");

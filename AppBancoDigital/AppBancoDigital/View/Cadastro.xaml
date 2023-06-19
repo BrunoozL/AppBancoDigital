@@ -27,6 +27,8 @@
                            TextColor="Black"/>
                     <Label Text="CPF:" TextColor="Black"/>
                     <control:MaskedEntry x:Name="txt_cpf" TextColor="Black" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
+                    <Label Text="Email:" TextColor="Black" />
+                    <Entry x:Name="txt_email" TextColor="Black"/>
                     <Label Text="Senha:" TextColor="Black"/>
                     <Entry x:Name="txt_senha"
                            Keyboard="Default"

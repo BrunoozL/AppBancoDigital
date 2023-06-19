@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -30,9 +30,11 @@ namespace AppBancoDigital.View
                     data_nasc = dtcpk_nascimento.Date,
                     cpf = txt_cpf.Text,
                     senha = txt_senha.Text,
+                    data_cadastro = DateTime.Now,
+                    email = txt_email.Text
                 });
 
-                if (c.ID != null)
+                if (c.id != null)
                 {
                     /**
                      * Vá no arquivo App.xaml.cs e veja que declarei uma propriedade chamada

@@ -41,18 +41,20 @@
                                 TextColor="Black"/>
                 </StackLayout>
             </Frame>
+            <Grid ColumnDefinitions="*, *">
 
-            <Button x:Name="btn_cadastro" TextColor="Black"
-                    TextTransform="None" HorizontalOptions="Center"
+                <Button x:Name="btn_cadastro" TextColor="Black"
+                    TextTransform="None" HorizontalOptions="Start"
                     Text="Cadastrar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#08D46D" Clicked="btn_cadastro_Clicked"/>
+                    BackgroundColor="#08D46D" Clicked="btn_cadastro_Clicked" Grid.Column="1"/>
 
             <Button x:Name="btn_voltar" TextColor="Black"
                     TextTransform="None" HorizontalOptions="StartAndExpand"
                     Text="Voltar" CornerRadius="20"
-                    BorderWidth="1" BorderColor="Black" Margin="20"
-                    BackgroundColor="#08D46D" Clicked="btn_voltar_Clicked"/>
+                    BorderWidth="1" BorderColor="Black" Margin="10"
+                    BackgroundColor="#08D46D" Clicked="btn_voltar_Clicked" Grid.Column="0"/>
+            </Grid>
         </StackLayout>
         
     </ContentPage.Content>

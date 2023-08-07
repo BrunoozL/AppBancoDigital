@@ -37,7 +37,7 @@ namespace AppBancoDigital.View
         {
             if (txt_cpf.Text == null || txt_senha.Text == null)
             {
-                await DisplayAlert("Erro de Login", "CPF e Senha são obrigatórios", "OK");
+                await DisplayAlert("Erro de Login", "CPF ou senha insetidos não existem", "OK");
             }
             else
             {
@@ -65,6 +65,7 @@ namespace AppBancoDigital.View
                 }
             }
         }
+
 
 
 

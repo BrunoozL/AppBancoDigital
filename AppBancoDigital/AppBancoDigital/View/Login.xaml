@@ -10,8 +10,15 @@
 
         <StackLayout VerticalOptions="Center">
 
-            <Image x:Name="logo" Scale="1.5"/>
-            <Label Text="LOGIN" FontSize="Title" HorizontalOptions="Center" TextColor="Black"/>
+            <Image x:Name="logo" Scale="1.4" HorizontalOptions="Center"/>
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text="LOGIN" FontSize="Title" HorizontalOptions="Center"
+                   TextColor="Black"/>
+
             <Label Text=""/>
             <Label Text=""/>
 
@@ -39,11 +46,10 @@
                     BorderWidth="1" BorderColor="Black"
                     BackgroundColor="#08D46D" Clicked="btn_login_Clicked"/>
 
-
             <Button x:Name="btn_CriarConta" Text="Não tem uma conta? Criar uma conta."
                     FontAttributes="Italic" TextTransform="None"
                     BackgroundColor="Transparent" TextColor="Black"
-                    CornerRadius="20" HorizontalOptions="Center"
+                    HorizontalOptions="Center"
                     Clicked="btn_CriarConta_Clicked"/>
             <Label Text=""/>
             <Label Text=""/>

@@ -4,15 +4,17 @@
              x:Class="AppBancoDigital.View.Cadastro"
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
              Background="#00FF7F">
-
     <ContentPage.Content>
+        
 
         <StackLayout VerticalOptions="Center">
 
-            <Image x:Name="logo" Scale="1.5"/>
-            <Label Text="CADASTRO" FontSize="Title" HorizontalOptions="Center" TextColor="Black"/>
+            <Image x:Name="logo" Scale="1.4" HorizontalOptions="Center"/>
             <Label Text=""/>
-
+            <Label Text=""/>
+            <Label Text="CADASTRO" FontSize="Title" HorizontalOptions="Center"
+                   TextColor="Black"/>
+            
 
             <Frame CornerRadius="10"
                    x:Name="form_cadastro"
@@ -25,36 +27,34 @@
                     <Entry x:Name="txt_nome"
                            Keyboard="Default"
                            TextColor="Black"/>
-                    <Label Text="CPF:" TextColor="Black"/>
-                    <control:MaskedEntry x:Name="txt_cpf" TextColor="Black" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
-                    <Label Text="Email:" TextColor="Black" />
-                    <Entry x:Name="txt_email" TextColor="Black"/>
-                    <Label Text="Senha:" TextColor="Black"/>
-                    <Entry x:Name="txt_senha"
+                        <Label Text="CPF:" TextColor="Black"/>
+                        <control:MaskedEntry x:Name="txt_cpf" TextColor="Black" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
+                        <Label Text="Email:" TextColor="Black" />
+                        <Entry x:Name="txt_email" TextColor="Black"/>
+                        <Label Text="Senha:" TextColor="Black"/>
+                        <Entry x:Name="txt_senha"
                            Keyboard="Default"
                            IsPassword="True"
                            ReturnType="Done"
                            TextColor="Black"/>
-                    <Label Text="Data de Nascimento:" TextColor="Black"/>
+                        <Label Text="Data de Nascimento:" TextColor="Black"/>
                     <DatePicker x:Name="dtcpk_nascimento"
                                 Format="dd/MM/yyyy"
                                 TextColor="Black"/>
                 </StackLayout>
             </Frame>
-            <Grid ColumnDefinitions="*, *">
 
-                <Button x:Name="btn_cadastro" TextColor="Black"
-                    TextTransform="None" HorizontalOptions="Start"
+            <Button x:Name="btn_cadastro" TextColor="Black"
+                    TextTransform="None" HorizontalOptions="CenterAndExpand"
                     Text="Cadastrar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#08D46D" Clicked="btn_cadastro_Clicked" Grid.Column="1"/>
+                    BackgroundColor="#08D46D" Clicked="btn_cadastro_Clicked"/>
 
             <Button x:Name="btn_voltar" TextColor="Black"
                     TextTransform="None" HorizontalOptions="StartAndExpand"
-                    Text="Voltar" CornerRadius="20"
-                    BorderWidth="1" BorderColor="Black" Margin="10"
-                    BackgroundColor="#08D46D" Clicked="btn_voltar_Clicked" Grid.Column="0"/>
-            </Grid>
+                    Text="Voltar" CornerRadius="20" Margin="20"
+                    BorderWidth="1" BorderColor="Black"
+                    BackgroundColor="#08D46D" Clicked="btn_voltar_Clicked"/>
         </StackLayout>
         
     </ContentPage.Content>

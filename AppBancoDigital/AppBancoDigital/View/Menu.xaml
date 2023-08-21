@@ -3,19 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Menu"
              Title="Menu"
-             Background="#00FF7F">
+             Background="Black">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
 
-            <Image x:Name="logo" Scale="1.6"/>
+            <Image x:Name="logo" Scale="2.2"/>
             <Label Text=""/>
-            <Label Text=""/> 
+            <Label Text=""/>
+            <Label Text=""/>
 
             <Button x:Name="btn_pag_login" TextColor="Black"
                     TextTransform="None" HorizontalOptions="Center"
                     Text="Iniciar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#08D46D" Clicked="btn_pag_login_Clicked"/>
+                    BackgroundColor="#00FF7F" Clicked="btn_pag_login_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

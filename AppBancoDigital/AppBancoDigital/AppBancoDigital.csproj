@@ -11,17 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Imagens\Lobank1.png" />
-    <None Remove="Imagens\Lobank2.png" />
+    <None Remove="Imagens\logo.png" />
+    <None Remove="Imagens\logo_com_nome.png" />
     <None Remove="Imagens\olho_aberto.png" />
     <None Remove="Imagens\olho_fechado.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Imagens\Lobank1.png">
+    <EmbeddedResource Include="Imagens\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Imagens\Lobank2.png">
+    <EmbeddedResource Include="Imagens\logo_com_nome.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\olho_aberto.png">

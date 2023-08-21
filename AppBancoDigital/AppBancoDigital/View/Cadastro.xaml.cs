@@ -16,7 +16,7 @@ namespace AppBancoDigital.View
         public Cadastro()
         {
             InitializeComponent();
-            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.Lobank1.png");
+            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo_com_nome.png");
             NavigationPage.SetHasNavigationBar(this, false);
         }
 

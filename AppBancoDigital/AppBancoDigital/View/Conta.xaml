@@ -3,33 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Conta"
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
-             Background="#00FF7F">
+             Background="Black">
 
-    <Grid RowDefinitions="100, 100, 100, 100, 100"
+    <Grid RowDefinitions="100, *, *, *, *"
               ColumnDefinitions="*, *">
 
-        <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Scale="1.5"
+        <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Scale="0.5"
                HorizontalOptions="Start"/>
 
         <!--="{Binding txt_nome}"-->
-        <Label Text="Bruno Righi" FontSize="Title"
-                       TextColor="Black"
-                       Grid.Row="0"
-                       Grid.Column="1"
-                       Margin="30"
-                       HorizontalOptions="End"/>
+        <Label Text=" Olá, Bruno" FontSize="15"
+                       TextColor="White"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       Margin="10"
+                       HorizontalOptions="StartAndExpand"/>
 
 
-        
-      
-            <!--x:Name="{Binding txt_reais}"-->
+        <!--x:Name="{Binding txt_reais}"-->
             <Label x:Name="txt_reais" Text="R$ 1.628,05" Margin="10" FontSize="Body"
-                             TextColor="Black" Grid.Row="1"
-                             Grid.Column="0" HorizontalOptions="StartAndExpand"
+                             TextColor="White" Grid.Row="0"
+                             Grid.Column="1" HorizontalOptions="EndAndExpand"
                              VerticalOptions="Start"/>
 
-        <ImageButton x:Name="btnolho" Scale="0.3" Grid.Row="1" Grid.Column="0"
-                     HorizontalOptions="End"
+        <ImageButton x:Name="btnolho" Scale="0.3" Grid.Row="0" Grid.Column="1"
+                     HorizontalOptions="Start"
                      Margin="10"
                      VerticalOptions="Start"
                      BackgroundColor="Transparent" Clicked="btnolho_Clicked"/>

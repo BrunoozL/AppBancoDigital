@@ -17,8 +17,8 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.Lobank2.png");
-            btnolho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho_fechado.png");
+            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo.png");
+            btnolho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho_aberto.png");
         }
 
         private async void btnolho_Clicked(object sender, EventArgs e)

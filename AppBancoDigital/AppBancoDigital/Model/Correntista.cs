@@ -13,5 +13,6 @@ namespace AppBancoDigital.Model
         public DateTime data_nasc { get;set; }
         public string senha { get; set; }
         public DateTime data_cadastro { get; set; }
+      
     }
 }

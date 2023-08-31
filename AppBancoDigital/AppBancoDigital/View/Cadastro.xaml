@@ -13,48 +13,48 @@
             <Label Text=""/>
             <Label Text=""/>
             <Label Text="CADASTRO" FontSize="Title" HorizontalOptions="Center"
-                   TextColor="#00FF7F"/>
+                   TextColor="White"/>
             
 
             <Frame CornerRadius="10"
                    x:Name="form_cadastro"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="Transparent"
-                   BorderColor="#00FF7F"
+                   BorderColor="#4414A4"
                    Margin="20">
                 <StackLayout>
-                    <Label Text="Nome:" TextColor="#00FF7F"/>
+                    <Label Text="Nome:" TextColor="White"/>
                     <Entry x:Name="txt_nome"
                            Keyboard="Default"
-                           TextColor="#00FF7F"/>
-                    <Label Text="CPF:" TextColor="#00FF7F"/>
-                    <control:MaskedEntry x:Name="txt_cpf" TextColor="#00FF7F" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
-                    <Label Text="Email:" TextColor="#00FF7F" />
-                    <Entry x:Name="txt_email" TextColor="#00FF7F"/>
-                    <Label Text="Senha:" TextColor="#00FF7F"/>
+                           TextColor="White"/>
+                    <Label Text="CPF:" TextColor="White"/>
+                    <control:MaskedEntry x:Name="txt_cpf" TextColor="White" Keyboard="Numeric" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
+                    <Label Text="Email:" TextColor="White" />
+                    <Entry x:Name="txt_email" TextColor="White"/>
+                    <Label Text="Senha:" TextColor="White"/>
                         <Entry x:Name="txt_senha"
                            Keyboard="Default"
                            IsPassword="True"
                            ReturnType="Done"
-                           TextColor="#00FF7F"/>
-                    <Label Text="Data de Nascimento:" TextColor="#00FF7F"/>
+                           TextColor="White"/>
+                    <Label Text="Data de Nascimento:" TextColor="White"/>
                     <DatePicker x:Name="dtcpk_nascimento"
                                 Format="dd/MM/yyyy"
-                                TextColor="#00FF7F"/>
+                                TextColor="White"/>
                 </StackLayout>
             </Frame>
 
-            <Button x:Name="btn_cadastro" TextColor="Black"
+            <Button x:Name="btn_cadastro" TextColor="White"
                     TextTransform="None" HorizontalOptions="CenterAndExpand"
                     Text="Cadastrar" CornerRadius="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00FF7F" Clicked="btn_cadastro_Clicked"/>
+                    BackgroundColor="#4414A4" Clicked="btn_cadastro_Clicked"/>
 
-            <Button x:Name="btn_voltar" TextColor="Black"
+            <Button x:Name="btn_voltar" TextColor="White"
                     TextTransform="None" HorizontalOptions="StartAndExpand"
                     Text="Voltar" CornerRadius="20" Margin="20"
                     BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00FF7F" Clicked="btn_voltar_Clicked"/>
+                    BackgroundColor="#4414A4" Clicked="btn_voltar_Clicked"/>
         </StackLayout>
         
     </ContentPage.Content>

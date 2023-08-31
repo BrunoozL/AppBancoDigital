@@ -12,11 +12,11 @@
             <Label Text=""/>
             <Label Text=""/>
 
-            <Button x:Name="btn_pag_login" TextColor="Black"
+            <Button x:Name="btn_pag_login" TextColor="White"
                     TextTransform="None" HorizontalOptions="Center"
                     Text="Iniciar" CornerRadius="20"
-                    BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00FF7F" Clicked="btn_pag_login_Clicked"/>
+                    BorderWidth="1"
+                    BackgroundColor="#4414A4" Clicked="btn_pag_login_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

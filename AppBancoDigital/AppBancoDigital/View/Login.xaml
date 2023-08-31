@@ -17,7 +17,7 @@
             <Label Text=""/>
             <Label Text=""/>
             <Label Text="LOGIN" FontSize="Title" HorizontalOptions="Center"
-                   TextColor="#00FF7F"/>
+                   TextColor="White"/>
 
             <Label Text=""/>
             <Label Text=""/>
@@ -26,38 +26,38 @@
                    x:Name="form_login"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="Transparent"
-                   BorderColor="#00FF7F"
+                   BorderColor="#4414A4"
                    Margin="20">
                 <StackLayout>
-                    <Label Text="CPF" TextColor="#00FF7F"/>
-                    <control:MaskedEntry x:Name="txt_cpf" Keyboard="Numeric" TextColor="#00FF7F" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
-                    <Label Text="Senha" TextColor="#00FF7F"/>
+                    <Label Text="CPF" TextColor="White"/>
+                    <control:MaskedEntry x:Name="txt_cpf" Keyboard="Numeric" TextColor="White" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
+                    <Label Text="Senha" TextColor="White"/>
                     <Entry x:Name="txt_senha"
-                           TextColor="#00FF7F"
+                           TextColor="White"
                            Keyboard="Default"
                            IsPassword="True"
                            ReturnType="Done"/>
                 </StackLayout>
             </Frame>
 
-            <Button x:Name="btn_login" TextColor="Black"
+            <Button x:Name="btn_login" TextColor="White"
                     TextTransform="None" HorizontalOptions="Center"
                     Text="Entrar" CornerRadius="20"
-                    BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#00FF7F" Clicked="btn_login_Clicked"/>
+                    BorderWidth="1" BorderColor="#4414A4"
+                    BackgroundColor="#4414A4" Clicked="btn_login_Clicked"/>
 
             <Button x:Name="btn_CriarConta" Text="Não tem uma conta? Criar uma conta."
                     FontAttributes="Italic" TextTransform="None"
-                    BackgroundColor="Transparent" TextColor="#00FF7F"
+                    BackgroundColor="Transparent" TextColor="White"
                     HorizontalOptions="Center"
                     Clicked="btn_CriarConta_Clicked"/>
             <Label Text=""/>
             <Label Text=""/>
-            <Button x:Name="btn_voltar" TextColor="Black"
+            <Button x:Name="btn_voltar" TextColor="White"
                     TextTransform="None" HorizontalOptions="StartAndExpand"
                     Text="Voltar" CornerRadius="20"
-                    BorderWidth="1" BorderColor="Black" Margin="20"
-                    BackgroundColor="#00FF7F" Clicked="btn_voltar_Clicked"/>
+                    BorderWidth="1" BorderColor="#4414A4" Margin="20"
+                    BackgroundColor="#4414A4" Clicked="btn_voltar_Clicked"/>
             
 
         </StackLayout>

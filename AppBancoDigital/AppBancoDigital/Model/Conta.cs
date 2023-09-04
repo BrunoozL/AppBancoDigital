@@ -7,7 +7,7 @@ namespace AppBancoDigital.Model
     public class Conta
     {
         public int id { get; set; }
-        public Correntista id_correntista { get; set; }
+        public Correntista id_corrente { get; set; }
         public double saldo { get; set; }
         public double limite { get; set; }
         public string tipo { get; set; }

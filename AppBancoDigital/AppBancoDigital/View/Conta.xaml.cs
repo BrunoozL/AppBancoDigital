@@ -17,30 +17,21 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            logo.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo.png");
-            btnolho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho_aberto.png");
         }
 
-        private async void btnolho_Clicked(object sender, EventArgs e)
+        private void Botão_receber_pix_Clicked(object sender, EventArgs e)
         {
-            try
-            {
-                if (!txt_saldo) 
-                {
-                    txt_saldo = true;
-                    btnolho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho_fechado.png");
-                }
-                else
-                {
-                    txt_saldo = false;
-                   btnolho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho_aberto.png");
-                }
 
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ocorreu um erro", ex.Message, "OK");
-            }
+        }
+
+        private void Botão_fazer_pix_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_sair_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -4,35 +4,137 @@
              x:Class="AppBancoDigital.View.Conta"
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
              Background="Black">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-    <Grid RowDefinitions="100, *, *, *, *"
-              ColumnDefinitions="*, *">
-
-        <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Scale="0.5"
-               HorizontalOptions="Start"/>
-
-        <!--="{Binding txt_nome}"-->
-        <Label Text=" Olá, Bruno" FontSize="15"
-                       TextColor="White"
-                       Grid.Row="1"
-                       Grid.Column="0"
-                       Margin="10"
-                       HorizontalOptions="StartAndExpand"/>
+            <StackLayout Grid.Row="0" BackgroundColor="#4414A4" Padding="20" Spacing="20">
 
 
-        <!--x:Name="{Binding txt_reais}"-->
-            <Label x:Name="txt_reais" Text="R$ 1.628,05" Margin="10" FontSize="Body"
-                             TextColor="White" Grid.Row="0"
-                             Grid.Column="1" HorizontalOptions="EndAndExpand"
-                             VerticalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
 
-        <ImageButton x:Name="btnolho" Scale="0.3" Grid.Row="0" Grid.Column="1"
-                     HorizontalOptions="Start"
-                     Margin="10"
-                     VerticalOptions="Start"
-                     BackgroundColor="Transparent" Clicked="btnolho_Clicked"/>
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" Padding="10" HorizontalOptions="StartAndExpand"/>
 
-    </Grid>
+                    <Label x:Name="lbl_nome" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#FFFFFF" FontSize="15"/>
+
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1611/1611154.png" Padding="10" />
+
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/2058/2058768.png" Padding="10" />
+
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://static.thenounproject.com/png/3960189-200.png" Padding="10" />
+                </StackLayout>
+
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Padding="20" Spacing="20">
+                <Label Text="Saldo da Conta" TextColor="White" FontSize="20" FontAttributes="Bold" />
+                <Label Text="R$ 1.543.360,00" TextColor="White" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold"  />
+
+                <ScrollView Orientation="Horizontal">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://imagensfree.com.br/wp-content/uploads/2022/01/icone-pix-outline-nubank.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="Botão_receber_pix_Clicked"/>
+                            <Label Text="Fazer Pix" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn.icon-icons.com/icons2/3245/PNG/512/pix_icon_198027.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="Botão_fazer_pix_Clicked"/>
+                            <Label Text="Receber Pix" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/2746/2746077.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Poupança" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/3076/3076631.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Pagamento" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/876/876784.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Transferir" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/4221/4221532.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Investimentos" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/4825/4825073.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Depositar" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+
+                    </StackLayout>
+
+                </ScrollView>
+
+
+                <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="#f0f1f5" Text="Minhas transações" TextColor="black" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+
+                <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="#f0f1f5" Text="Contas adicionais " TextColor="black" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+                <ScrollView Orientation="Horizontal">
+
+                    <StackLayout Orientation="Horizontal" Padding="5" Spacing="10">
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="10" WidthRequest="250" HeightRequest="40">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="12" Text="INFORMAÇÕES ADICIONAIS: " TextColor="#4414A4" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="Aplicativo em manutenção" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="10" WidthRequest="250" HeightRequest="40">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="12" Text="SOBRE O APLICATIVO: " TextColor="#4414A4" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="Tem o objetivo de se parecer com um Banco Digital real" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="10" WidthRequest="250" HeightRequest="40">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="12" Text="CONTEÚDO DO APLICATIVO: " TextColor="#4414A4" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="Banco Digital" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+
+                    </StackLayout>
+                </ScrollView>
+
+                <StackLayout>
+                    <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/1828/1828427.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="btn_sair_Clicked" />
+                    <Label Text="Sair" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                </StackLayout>
+
+
+
+
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
 
 
 </ContentPage>

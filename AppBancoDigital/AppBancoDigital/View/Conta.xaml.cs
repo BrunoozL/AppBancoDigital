@@ -13,25 +13,53 @@ namespace AppBancoDigital.View
     public partial class Conta : ContentPage
     {
         bool txt_saldo = false;
+        string txt_sim = "Sim";
+        string txt_nao = "Nao"; 
         public Conta()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void Botão_receber_pix_Clicked(object sender, EventArgs e)
+        private async void Botão_receber_pix_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                App.Current.MainPage = new NavigationPage(new View.PixReceber());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+            }
         }
 
-        private void Botão_fazer_pix_Clicked(object sender, EventArgs e)
+        private async void Botão_fazer_pix_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                App.Current.MainPage = new NavigationPage(new View.PixEnviar());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+            }
         }
 
-        private void btn_sair_Clicked(object sender, EventArgs e)
+        private async void btn_sair_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+                string resp = await DisplayActionSheet("Tem certeza que deseja sair?", txt_sim, txt_nao);
 
+                if (resp == txt_sim)
+                {
+                    App.Current.MainPage = new NavigationPage(new View.Menu());
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+            }
         }
     }
 }

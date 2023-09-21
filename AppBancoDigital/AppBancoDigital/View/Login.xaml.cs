@@ -58,7 +58,6 @@ namespace AppBancoDigital.View
                         throw new Exception("Dados de login inválidos.");
                 }
 
-
                 catch (Exception ex)
                 {
                     await DisplayAlert("Ops!", ex.Message, "OK");

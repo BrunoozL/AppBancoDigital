@@ -39,12 +39,12 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
 
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://imagensfree.com.br/wp-content/uploads/2022/01/icone-pix-outline-nubank.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="Botão_receber_pix_Clicked"/>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://imagensfree.com.br/wp-content/uploads/2022/01/icone-pix-outline-nubank.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="Botão_fazer_pix_Clicked"/>
                             <Label Text="Fazer Pix" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                         </StackLayout>
 
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn.icon-icons.com/icons2/3245/PNG/512/pix_icon_198027.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="Botão_fazer_pix_Clicked"/>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn.icon-icons.com/icons2/3245/PNG/512/pix_icon_198027.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="Botão_receber_pix_Clicked"/>
                             <Label Text="Receber Pix" FontSize="12" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                         </StackLayout>
 

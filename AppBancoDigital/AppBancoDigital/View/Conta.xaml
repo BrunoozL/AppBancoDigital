@@ -18,7 +18,7 @@
 
                     <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" Padding="10" HorizontalOptions="StartAndExpand"/>
 
-                    <Label Text="{x:Reference lbl_nome}" x:Name="lbl_nome" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#FFFFFF" FontSize="15"/>
+                    <Label x:Name="lbl_nome" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="#FFFFFF" FontSize="16"/>
 
                     <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1611/1611154.png" Padding="10" />
 
@@ -32,7 +32,7 @@
 
             <StackLayout Grid.Row="1" Padding="20" Spacing="20">
                 <Label Text="Saldo da Conta" TextColor="White" FontSize="20" FontAttributes="Bold" />
-                <Label Text="R$ 1.543.360,00" TextColor="White" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold"  />
+                <Label x:Name="lbl_saldo" TextColor="White" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold"  />
 
                 <ScrollView Orientation="Horizontal">
 

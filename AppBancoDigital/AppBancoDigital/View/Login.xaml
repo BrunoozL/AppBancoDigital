@@ -29,9 +29,9 @@
                    BorderColor="#4414A4"
                    Margin="20">
                 <StackLayout>
-                    <Label Text="CPF" TextColor="White"/>
+                    <Label Text="CPF:" TextColor="White"/>
                     <control:MaskedEntry x:Name="txt_cpf" Keyboard="Numeric" TextColor="White" FontAttributes="Bold" Mask="XXX.XXX.XXX-XX"/>
-                    <Label Text="Senha" TextColor="White"/>
+                    <Label Text="Senha:" TextColor="White"/>
                     <Entry x:Name="txt_senha"
                            TextColor="White"
                            Keyboard="Default"

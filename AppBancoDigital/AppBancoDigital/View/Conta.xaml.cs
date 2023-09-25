@@ -21,7 +21,8 @@ namespace AppBancoDigital.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             Correntista c = new Correntista();
-            lbl_nome.Text = "Olá, Seja Bem vindo(a)" + App.DadosCorrentista;
+            lbl_nome.Text = "Olá, " + App.DadosCorrentista.nome + "   ";
+            //lbl_saldo.Text = "" + App.DadosConta.saldo;//
         }
 
         private async void Botão_receber_pix_Clicked(object sender, EventArgs e)

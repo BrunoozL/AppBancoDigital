@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,10 +18,18 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
 
+
         }
 
         private void Gerar_QrCode_Clicked(object sender, EventArgs e)
         {
+            string teste = "Chave da Transferência: " + App.DadosCorrentista.email;
+
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(teste, QRCodeGenerator.ECCLevel.Q);
+            PngByteQRCode qRCode = new PngByteQRCode(qrCodeData);
+            byte[] qrCodeBytes = qRCode.GetGraphic(20);
+            img_qrcode.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
         }
     }
 }

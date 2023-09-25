@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppBancoDigital.Model;
 
 namespace AppBancoDigital.View
 {
@@ -19,6 +20,8 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            Correntista c = new Correntista();
+            lbl_nome.Text = "Olá, Seja Bem vindo(a)" + App.DadosCorrentista;
         }
 
         private async void Botão_receber_pix_Clicked(object sender, EventArgs e)

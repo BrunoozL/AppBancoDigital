@@ -18,7 +18,7 @@
 
                     <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" Padding="10" HorizontalOptions="StartAndExpand"/>
 
-                    <Label x:Name="lbl_nome" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#FFFFFF" FontSize="15"/>
+                    <Label Text="{x:Reference lbl_nome}" x:Name="lbl_nome" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#FFFFFF" FontSize="15"/>
 
                     <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1611/1611154.png" Padding="10" />
 

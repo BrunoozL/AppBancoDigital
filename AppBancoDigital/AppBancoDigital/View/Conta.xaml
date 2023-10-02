@@ -11,14 +11,16 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <StackLayout Grid.Row="0" BackgroundColor="#4414A4" Padding="20" Spacing="20">
+            <StackLayout Grid.Row="0" BackgroundColor="Black" Padding="20" Spacing="20">
 
 
                 <StackLayout Orientation="Horizontal">
 
                     <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" Padding="10" HorizontalOptions="StartAndExpand"/>
 
-                    <Label x:Name="lbl_nome" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="#FFFFFF" FontSize="16"/>
+                    <Label Text="Olá, " TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="16"/>
+                    
+                    <Label x:Name="lbl_nome" TextColor="#FF1493" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="18"/>
 
                     <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/1611/1611154.png" Padding="10" />
 
@@ -32,7 +34,7 @@
 
             <StackLayout Grid.Row="1" Padding="20" Spacing="20">
                 <Label Text="Saldo da Conta" TextColor="White" FontSize="20" FontAttributes="Bold" />
-                <Label x:Name="lbl_saldo" TextColor="White" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold"  />
+                <Label Text="R$1508,09" x:Name="lbl_saldo" TextColor="#FF1493" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold"  />
 
                 <ScrollView Orientation="Horizontal">
 
@@ -90,7 +92,7 @@
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span FontSize="12" Text="INFORMAÇÕES ADICIONAIS: " TextColor="#4414A4" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="INFORMAÇÕES ADICIONAIS: " TextColor="#FF1493" FontAttributes="Bold"/>
                                         <Span FontSize="12" Text="Aplicativo em manutenção" TextColor="Black" FontAttributes="Bold"/>
                                     </FormattedString>
                                 </Label.FormattedText>
@@ -101,7 +103,7 @@
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span FontSize="12" Text="SOBRE O APLICATIVO: " TextColor="#4414A4" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="SOBRE O APLICATIVO: " TextColor="#FF1493" FontAttributes="Bold"/>
                                         <Span FontSize="12" Text="Tem o objetivo de se parecer com um Banco Digital real" TextColor="Black" FontAttributes="Bold"/>
                                     </FormattedString>
                                 </Label.FormattedText>
@@ -112,7 +114,7 @@
                             <Label>
                                 <Label.FormattedText>
                                     <FormattedString>
-                                        <Span FontSize="12" Text="CONTEÚDO DO APLICATIVO: " TextColor="#4414A4" FontAttributes="Bold"/>
+                                        <Span FontSize="12" Text="CONTEÚDO DO APLICATIVO: " TextColor="#FF1493" FontAttributes="Bold"/>
                                         <Span FontSize="12" Text="Banco Digital" TextColor="Black" FontAttributes="Bold"/>
                                     </FormattedString>
                                 </Label.FormattedText>

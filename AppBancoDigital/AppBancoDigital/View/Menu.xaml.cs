@@ -23,6 +23,9 @@ namespace AppBancoDigital.View
         {
             try
             {
+                // Button btn = (Button)sender;
+                // await btn.ScaleTo(1.2, 100, Easing.CubicOut);
+                // await btn.ScaleTo(1, 100, Easing.CubicIn);
                 App.Current.MainPage = new NavigationPage(new View.Login());
             }
             catch (Exception ex)

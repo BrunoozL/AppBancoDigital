@@ -9,7 +9,7 @@
 
         <StackLayout VerticalOptions="Center">
 
-            <Image x:Name="logo" Scale="1.7" HorizontalOptions="Center"/>
+            <Image x:Name="logo" Scale="2" HorizontalOptions="Center"/>
             <Label Text=""/>
             <Label Text=""/>
             <Label Text="CADASTRO" FontSize="Title" HorizontalOptions="Center"
@@ -20,7 +20,7 @@
                    x:Name="form_cadastro"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="Transparent"
-                   BorderColor="#4414A4"
+                   BorderColor="#FF1493"
                    Margin="20">
                 <StackLayout>
                     <Label Text="Nome:" TextColor="White"/>
@@ -44,17 +44,17 @@
                 </StackLayout>
             </Frame>
 
-            <Button x:Name="btn_cadastro" TextColor="White"
+            <Button x:Name="btn_cadastro" TextColor="#FF1493"
                     TextTransform="None" HorizontalOptions="CenterAndExpand"
                     Text="Cadastrar" CornerRadius="20"
-                    BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#4414A4" Clicked="btn_cadastro_Clicked"/>
+                    BorderWidth="1" BorderColor="#FF1493"
+                    BackgroundColor="Transparent" Clicked="btn_cadastro_Clicked"/>
 
-            <Button x:Name="btn_voltar" TextColor="White"
+            <Button x:Name="btn_voltar" TextColor="#FF1493"
                     TextTransform="None" HorizontalOptions="StartAndExpand"
                     Text="Voltar" CornerRadius="20" Margin="20"
-                    BorderWidth="1" BorderColor="Black"
-                    BackgroundColor="#4414A4" Clicked="btn_voltar_Clicked"/>
+                    BorderWidth="1" BorderColor="#FF1493"
+                    BackgroundColor="Transparent" Clicked="btn_voltar_Clicked"/>
         </StackLayout>
         
     </ContentPage.Content>

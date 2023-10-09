@@ -23,7 +23,7 @@ namespace AppBancoDigital.View
 
         private void Gerar_QrCode_Clicked(object sender, EventArgs e)
         {
-            string teste = "Chave da Transferência: " + App.DadosCorrentista.email;
+            string teste = "Chave da Transferência para: " + App.DadosCorrentista.nome;
 
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(teste, QRCodeGenerator.ECCLevel.Q);

@@ -65,5 +65,17 @@ namespace AppBancoDigital.View
                 await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
             }
         }
+
+        private async void btn_config_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                App.Current.MainPage = new NavigationPage(new View.Config());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro", ex.Message, "OK");
+            }
+        }
     }
 }

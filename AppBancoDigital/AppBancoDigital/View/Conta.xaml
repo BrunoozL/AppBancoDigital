@@ -26,7 +26,7 @@
 
                     <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/2058/2058768.png" Padding="10" />
 
-                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://static.thenounproject.com/png/3960189-200.png" Padding="10" />
+                    <ImageButton x:Name="btn_config" HeightRequest="50" WidthRequest="50" BackgroundColor="White" Clicked="btn_config_Clicked" CornerRadius="50" Source="https://static.thenounproject.com/png/3960189-200.png" Padding="10" />
                 </StackLayout>
 
 

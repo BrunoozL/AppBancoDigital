@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.Config"
+             Title="Configutação"
+             Background="Black">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Conta" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+
+            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Documentos" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+
+            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Chave Pix" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+
+            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Segurança" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

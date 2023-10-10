@@ -4,13 +4,25 @@
              x:Class="AppBancoDigital.View.PixReceber"
              BackgroundColor="Black">
     <ContentPage.Content>
-        <StackLayout>
-            <Button x:Name="Gerar_QrCode"  Text="Gerar QR CODE" Clicked="Gerar_QrCode_Clicked"/>
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout>
+                <Button x:Name="Gerar_QrCode"  Text="Gerar QR CODE" Clicked="Gerar_QrCode_Clicked"/>
 
-            <Label Text="QR Code vai aparecer abaixo: " />
+                <Label Text="QR Code vai aparecer abaixo: " />
 
-            <Image x:Name="img_qrcode" />
+                <Image x:Name="img_qrcode" />
 
-        </StackLayout>
+                <Button x:Name="btn_voltar" TextColor="#FF1493"
+                        TextTransform="None" HorizontalOptions="StartAndExpand"
+                        Text="Voltar" CornerRadius="20"
+                        BorderWidth="1" BorderColor="#FF1493" Margin="20"
+                        BackgroundColor="Transparent" Clicked="btn_voltar_Clicked"/>
+
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

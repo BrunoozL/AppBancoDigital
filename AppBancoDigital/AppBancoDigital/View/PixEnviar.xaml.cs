@@ -19,7 +19,6 @@ namespace AppBancoDigital.View
 
         private async void Voltar_Clicked(object sender, EventArgs e)
         {
-
             try
             {
                 App.Current.MainPage = new NavigationPage(new View.Conta());

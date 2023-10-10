@@ -4,13 +4,12 @@
              x:Class="AppBancoDigital.View.PixEnviar"
              xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms">
     <ContentPage.Content>
-        <StackLayout>
-
-            <Grid VerticalOptions="FillAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="4*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout>
                 <zxing:ZXingScannerView x:Name="zxing" 
                                 VerticalOptions="FillAndExpand"/>
                 <zxing:ZXingDefaultOverlay TopText="Segure o Telefone no QR Code"
@@ -21,13 +20,12 @@
                        VerticalOptions="Center"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"/>
-                <Button x:Name="btn_voltar" TextColor="White"
-        TextTransform="None" HorizontalOptions="StartAndExpand"
-        Text="Voltar" CornerRadius="20"
-        BorderWidth="1" BorderColor="Black" Margin="20"
-        BackgroundColor="Black" Clicked="Voltar_Clicked"  Grid.Row="2"/>
-            </Grid>
-
-        </StackLayout>
+                <Button x:Name="btn_voltar" TextColor="#FF1493"
+                        TextTransform="None" HorizontalOptions="StartAndExpand"
+                        Text="Voltar" CornerRadius="20"
+                        BorderWidth="1" BorderColor="#FF1493" Margin="20"
+                        BackgroundColor="Transparent" Clicked="Voltar_Clicked"/>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

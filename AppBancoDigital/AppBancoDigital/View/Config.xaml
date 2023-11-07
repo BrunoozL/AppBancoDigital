@@ -7,13 +7,36 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Conta" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+            <Label Text="CONFIGURAÇÕES"/>
 
-            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Documentos" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+            <Button x:Name="btn_Conta" TextColor="#FF1493" HorizontalOptions="CenterAndExpand"
+                    Text="CONTA" CornerRadius="20" Margin="40"
+                    BorderWidth="1" BorderColor="#FF1493"
+                    BackgroundColor="Transparent" />
 
-            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Chave Pix" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+            <Button x:Name="btn_Documentos" TextColor="#FF1493"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Documentos" CornerRadius="20" Margin="75"
+                    BorderWidth="1" BorderColor="#FF1493"
+                    BackgroundColor="Transparent"/>
 
-            <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="Transparent" Text="Segurança" BorderColor="#FF1493" BorderWidth="1" TextColor="#FF1493" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+            <Button x:Name="btn_ChavePix" TextColor="#FF1493"
+                    TextTransform="None" HorizontalOptions="CenterAndExpand"
+                    Text="CHAVE PIX" CornerRadius="20" Margin="40"
+                    BorderWidth="1" BorderColor="#FF1493"
+                    BackgroundColor="Transparent" />
+
+            <Button x:Name="btn_Segurança" TextColor="#FF1493"
+                    TextTransform="None" HorizontalOptions="CenterAndExpand"
+                    Text="SEGURANÇA" CornerRadius="20" Margin="75"
+                    BorderWidth="1" BorderColor="#FF1493"
+                    BackgroundColor="Transparent"/>
+
+            <Button x:Name="btn_voltar" TextColor="#FF1493"
+                    TextTransform="None" HorizontalOptions="StartAndExpand"
+                    Text="Voltar" CornerRadius="20" Margin="20"
+                    BorderWidth="1" BorderColor="#FF1493"
+                    BackgroundColor="Transparent" Clicked="btn_voltar_Clicked"/>
 
         </StackLayout>
     </ContentPage.Content>
